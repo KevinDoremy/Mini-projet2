@@ -1,12 +1,14 @@
 package build;
 
-public abstract class Operation extends Noeud implements Expression {
+import org.graalvm.compiler.serviceprovider.SpeculationReasonGroup.SpeculationContextObject.Visitor;
 
-    Expression expression, expression2;
+public class Operation implements Expression {
 
-    public Operation(Expression expression, Expression expression2) {
-        this.expression = expression;
-        this.expression2 = expression2;
+    String symbole;
+
+    @Override
+    public void accepterVisiteur() {
+
     }
 
 }
