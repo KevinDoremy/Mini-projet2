@@ -5,15 +5,20 @@
 skinparam style strict
 
 class Nombre implements Noeud {
-    -valeur:int
-    + afficher() : void
+
     + accepterVisiteur(Visiteur visiteur) : void
 
 }
 
-interface Noeud {
-
+class Noeud {
+ -valeur:String;
+     -droit:Noeud;
+     -gauche:Noeud;
+     -parent:Noeud;
    + accepterVisiteur(Visiteur visiteur) : void
+   +afficher()
+   +hasNoeudDroit():Booleen
+   +hasNoeudGauche():Boolee
 }
 abstract class Operation implements Noeud {
 
