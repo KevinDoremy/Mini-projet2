@@ -14,4 +14,8 @@ public class Nombre {
     public void accepterVisiteur(Visiteur visiteur) {
 
     }
+
+    public int getValeur() {
+        return valeur;
+    }
 }
