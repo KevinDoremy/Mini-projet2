@@ -11,14 +11,15 @@ class Nombre implements Noeud {
 }
 
 class Noeud {
- -valeur:String;
-     -droit:Noeud;
-     -gauche:Noeud;
-     -parent:Noeud;
+    -valeur:String;
+    -droit:Noeud;
+    -gauche:Noeud;
+    -parent:Noeud;
    + accepterVisiteur(Visiteur visiteur) : void
    +afficher()
-   +hasNoeudDroit():Booleen
-   +hasNoeudGauche():Boolee
+   +hasNoeudDroit(): boolean
+   +hasNoeudGauche(): boolean
+   +hasChildren() : boolean
 }
 abstract class Operation implements Noeud {
 
