@@ -23,11 +23,11 @@ public class Noeud implements Expression {
 
     }
 
-    public void setGauche(Noeud noeud, String valeur) {
+    public void setGauche(Noeud noeud) {
         gauche = new Noeud(valeur, this);
     }
 
-    public void setDroit(Noeud noeud, String valeur) {
+    public void setDroit(Noeud noeud) {
         droit = new Noeud(valeur, this);
     }
 
