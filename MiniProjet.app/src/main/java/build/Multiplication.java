@@ -8,4 +8,8 @@ public class Multiplication extends Operation {
     public void accepterVisiteur(Visiteur visiteur) {
         visiteur.visit(this);
     }
+
+    public static String getSymbole() {
+        return symbole;
+    }
 }
