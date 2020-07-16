@@ -6,6 +6,6 @@ public class Multiplication extends Operation {
 
     @Override
     public void accepterVisiteur(Visiteur visiteur) {
-        v.visit(this);
+        visiteur.visit(this);
     }
 }
