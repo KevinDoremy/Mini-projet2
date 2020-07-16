@@ -4,9 +4,8 @@ public class Division extends Operation {
 
     static final String symbole = "/";
 
-    cto
-
     @Override
-    public void accepterVisiteur() {
-
+    public void accepterVisiteur(Visiteur visiteur) {
+        v.visit(this);
     }
+}

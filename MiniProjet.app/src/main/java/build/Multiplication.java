@@ -2,11 +2,10 @@ package build;
 
 public class Multiplication extends Operation {
 
-    public Multiplication(Nombre nombre1, Nombre nombre2) {
+    static final String symbole = "*";
 
-    }
-
+    @Override
     public void accepterVisiteur(Visiteur visiteur) {
-
+        v.visit(this);
     }
 }

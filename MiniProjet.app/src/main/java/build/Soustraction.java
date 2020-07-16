@@ -5,11 +5,10 @@ package build;
  */
 public class Soustraction extends Operation {
 
-    public Soustraction(Nombre one, Nombre deux) {
+    static final String symbole = "-";
 
-    }
-
+    @Override
     public void accepterVisiteur(Visiteur visiteur) {
-
+        v.visit(this);
     }
 }

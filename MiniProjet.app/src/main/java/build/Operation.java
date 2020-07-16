@@ -7,8 +7,8 @@ public class Operation implements Expression {
     String symbole;
 
     @Override
-    public void accepterVisiteur() {
-
+    public void accepterVisiteur(Visiteur visiteur) {
+        v.visit(this);
     }
 
 }
