@@ -1,6 +1,6 @@
 package build;
 
-public class Operation implements Expression {
+public class Operation implements Noeud {
 
     String symbole;
 
