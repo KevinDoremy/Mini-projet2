@@ -1,6 +1,6 @@
 package build;
 
-public class Noeud implements Expression {
+public class Noeud {
 
     private String valeur;
     private Noeud droit;
@@ -23,11 +23,11 @@ public class Noeud implements Expression {
 
     }
 
-    public void setGauche(Noeud noeud) {
+    public void setGauche(String valeur) {
         gauche = new Noeud(valeur, this);
     }
 
-    public void setDroit(Noeud noeud) {
+    public void setDroit(String valeur) {
         droit = new Noeud(valeur, this);
     }
 
@@ -37,5 +37,17 @@ public class Noeud implements Expression {
 
     public Noeud getDroit() {
         return droit;
+    }
+
+    public boolean hasNoeudGauche(){
+        return (gauche != null) ? true : false;
+    }
+
+    public boolean hasNoeudDroit(){
+        return (droit != null) ? true : false;
+    }
+
+    public String getValeur(){
+        return valeur;
     }
 }
