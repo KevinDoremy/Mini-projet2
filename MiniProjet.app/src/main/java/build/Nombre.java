@@ -7,12 +7,8 @@ public class Nombre {
         this.valeur = valeur;
     }
 
-    public void afficher() {
-
-    }
-
     public void accepterVisiteur(Visiteur visiteur) {
-
+        visiteur.visit(this);
     }
 
     public int getValeur() {
