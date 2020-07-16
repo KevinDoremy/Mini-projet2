@@ -19,8 +19,7 @@ public class Noeud {
 
     }
 
-    public void accepterVisiteur() {
-
+    public void accepterVisiteur(Visiteur visiteur) {
     }
 
     public void setGauche(String valeur) {
