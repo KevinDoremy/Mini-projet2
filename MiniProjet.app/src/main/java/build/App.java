@@ -26,6 +26,22 @@ public class App {
 
     public static void parcourirNoeudTest(Noeud noeud){
 
-        while
+        Noeud noeudCourrant = noeud;
+
+        while(noeudCourrant.hasNoeudDroit() || noeudCourrant.hasNoeudGauche()){
+
+            System.out.println("TEST");
+
+            if(noeudCourrant.hasNoeudDroit()){
+                noeudCourrant = noeudCourrant.getDroit();
+            }
+            else if(noeudCourrant.hasNoeudGauche()){
+                noeudCourrant = noeudCourrant.getGauche();
+            }
+            else{
+                System.out.println("VALEUR NOEUD: " + noeudCourrant.getValeur());
+                noeudCourrant = noeudCourrant.getParent();
+            }
+        }
     }
 }

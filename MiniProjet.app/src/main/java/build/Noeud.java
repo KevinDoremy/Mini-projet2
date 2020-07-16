@@ -30,12 +30,20 @@ public class Noeud {
         droit = new Noeud(valeur, this);
     }
 
+    public Noeud getParent(){
+        return parent;
+    }
+
     public Noeud getGauche() {
         return gauche;
     }
 
     public Noeud getDroit() {
         return droit;
+    }
+
+    public boolean hasChildren(){
+        return (gauche != null || droit != null) ? true : false;
     }
 
     public boolean hasNoeudGauche(){
