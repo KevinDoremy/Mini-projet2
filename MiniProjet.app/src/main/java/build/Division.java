@@ -4,9 +4,7 @@ public class Division extends Operation {
 
     static final String symbole = "/";
 
-    public Division(Expression expression, Expression expression2) {
-
-    }
+    cto
 
     @Override
     public void accepterVisiteur() {
